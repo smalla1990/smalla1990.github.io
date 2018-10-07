@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="css," />
 
 
 
@@ -86,16 +86,20 @@
 
 
 
-<meta name="description" content="针对 前端 react JavaScript es6 css3 html5 node.js 等记录">
-<meta property="og:type" content="website">
-<meta property="og:title" content="dqnmwf&#39;s Notes">
-<meta property="og:url" content="https://smalla1990.github.io/index.html">
+<meta name="description" content="摘要    前不久碰到一个需求，在宽度不固定下实现横线滚动，这里我用css来写，记录下来，供以后借鉴。 有时会忘记  原理子元素的宽度大于父元素是，会出现滚动 overflow-x: scroll; 为水平滚动，overflow-y: scroll; 为垂直滚动，按需求这里采用水平横向滚动 1234567891011121314151617181920212223// html 如下	&amp;lt;di">
+<meta name="keywords" content="css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="实现横向滚动 并宽度不固定">
+<meta property="og:url" content="https://smalla1990.github.io/2018/10/07/实现横向滚动-并宽度不固定/index.html">
 <meta property="og:site_name" content="dqnmwf&#39;s Notes">
-<meta property="og:description" content="针对 前端 react JavaScript es6 css3 html5 node.js 等记录">
+<meta property="og:description" content="摘要    前不久碰到一个需求，在宽度不固定下实现横线滚动，这里我用css来写，记录下来，供以后借鉴。 有时会忘记  原理子元素的宽度大于父元素是，会出现滚动 overflow-x: scroll; 为水平滚动，overflow-y: scroll; 为垂直滚动，按需求这里采用水平横向滚动 1234567891011121314151617181920212223// html 如下	&amp;lt;di">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/8556622-9bb0c6ab48b6113b.gif?imageMogr2/auto-orient/strip">
+<meta property="og:updated_time" content="2018-10-07T06:42:58.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="dqnmwf&#39;s Notes">
-<meta name="twitter:description" content="针对 前端 react JavaScript es6 css3 html5 node.js 等记录">
+<meta name="twitter:title" content="实现横向滚动 并宽度不固定">
+<meta name="twitter:description" content="摘要    前不久碰到一个需求，在宽度不固定下实现横线滚动，这里我用css来写，记录下来，供以后借鉴。 有时会忘记  原理子元素的宽度大于父元素是，会出现滚动 overflow-x: scroll; 为水平滚动，overflow-y: scroll; 为垂直滚动，按需求这里采用水平横向滚动 1234567891011121314151617181920212223// html 如下	&amp;lt;di">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/8556622-9bb0c6ab48b6113b.gif?imageMogr2/auto-orient/strip">
 
 
 
@@ -125,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="https://smalla1990.github.io/"/>
+  <link rel="canonical" href="https://smalla1990.github.io/2018/10/07/实现横向滚动-并宽度不固定/"/>
 
 
 
 
 
-  <title>dqnmwf's Notes</title>
+  <title>实现横向滚动 并宽度不固定 | dqnmwf's Notes</title>
   
 
 
@@ -150,8 +154,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -254,9 +257,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -269,7 +272,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://smalla1990.github.io/2018/06/07/实现横向滚动-并宽度不固定/">
+    <link itemprop="mainEntityOfPage" href="https://smalla1990.github.io/2018/10/07/实现横向滚动-并宽度不固定/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="dqnmwf">
@@ -286,9 +289,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/07/实现横向滚动-并宽度不固定/" itemprop="url">实现横向滚动 并宽度不固定</a></h1>
+          <h1 class="post-title" itemprop="name headline">实现横向滚动 并宽度不固定</h1>
         
 
         <div class="post-meta">
@@ -300,8 +301,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-07T14:40:19+08:00">
-                2018-06-07
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-07T14:40:19+08:00">
+                2018-10-07
               </time>
             
 
@@ -338,17 +339,17 @@
       
 
       
-        
-          <h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><blockquote>
-<p>前不久碰到一个需求，在宽度不固定下实现横线滚动，这里我用css来写，记录下来，供以后借鉴。 <del>有时会忘记</del><br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/06/07/实现横向滚动-并宽度不固定/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <p><strong>摘要</strong>  </p>
+<blockquote>
+<p>前不久碰到一个需求，在宽度不固定下实现横线滚动，这里我用css来写，记录下来，供以后借鉴。 <del>有时会忘记</del></p>
+</blockquote>
+<p><strong><em>原理</em></strong><br>子元素的宽度大于父元素是，会出现滚动 overflow-x: scroll; 为水平滚动，overflow-y: scroll; 为垂直滚动，按需求这里采用水平横向滚动</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">// html 如下</span><br><span class="line">	&lt;div class=&quot;content&quot;&gt;</span><br><span class="line">		&lt;div class=&quot;redPacket&quot;&gt;</span><br><span class="line">			&lt;div class=&quot;item&quot; style=&quot;margin-right:10px;border-radius:4px;&quot;&gt;</span><br><span class="line">				&lt;div class=&quot;amount&quot;&gt;</span><br><span class="line">					&lt;span&gt;2&lt;/span&gt;元</span><br><span class="line">				&lt;/div&gt;</span><br><span class="line">				&lt;div class=&quot;fundInfo&quot;&gt;</span><br><span class="line">					&lt;p class=&quot;name&quot;&gt;鹏华基金鹏友会&lt;/p&gt;</span><br><span class="line">					&lt;p&gt;满1000元可用&lt;/p&gt;</span><br><span class="line">				&lt;/div&gt;					</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">			&lt;div class=&quot;item&quot; style=&quot;margin-right:10px;border-radius:4px;&quot;&gt;</span><br><span class="line">				&lt;div class=&quot;amount&quot;&gt;</span><br><span class="line">					&lt;span&gt;2&lt;/span&gt;元</span><br><span class="line">				&lt;/div&gt;</span><br><span class="line">				&lt;div class=&quot;fundInfo&quot;&gt;</span><br><span class="line">					&lt;p class=&quot;name&quot;&gt;鹏华基金鹏友会&lt;/p&gt;</span><br><span class="line">					&lt;p&gt;满1000元可用&lt;/p&gt;</span><br><span class="line">				&lt;/div&gt;					</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line">//  css如下</span><br><span class="line">		* &#123;</span><br><span class="line">			margin:0;</span><br><span class="line">			padding:0;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">		body &#123;</span><br><span class="line">			width:320px;</span><br><span class="line">			height: 40px;</span><br><span class="line">			overflow: hidden;</span><br><span class="line">			margin:100px auto;</span><br><span class="line">		&#125;</span><br><span class="line">		.content &#123;</span><br><span class="line">		    width: 100%;</span><br><span class="line">		    overflow-x: scroll; // 子元素的宽度大于父元素的即可滚动</span><br><span class="line">		    overflow-y: hidden;</span><br><span class="line">		    border-radius: 4px;</span><br><span class="line">		&#125;</span><br><span class="line">        /*  .content::-webkit-scrollbar &#123;display:none&#125; // 隐藏滚动条*/</span><br><span class="line">		.redPacket&#123;</span><br><span class="line">			display: -webkit-flex;</span><br><span class="line">		    display: -ms-flexbox;</span><br><span class="line">		    display: flex;</span><br><span class="line">		    float: left;  // 使其脱离文档流 宽度为所有字元素的和</span><br><span class="line">		    min-width: 100%;</span><br><span class="line">		&#125;</span><br><span class="line">		.item &#123;</span><br><span class="line">			min-width: 150px;</span><br><span class="line">		    height: 50px;</span><br><span class="line">		    display: -webkit-flex;</span><br><span class="line">		    display: -ms-flexbox;</span><br><span class="line">		    display: flex;</span><br><span class="line">		    flex: 3;</span><br><span class="line">		    -webkit-align-items: center;</span><br><span class="line">		    -ms-flex-align: center;</span><br><span class="line">		    align-items: center;</span><br><span class="line">		    background-image: linear-gradient(90deg,#ff6d0b 2%,#ef4916);</span><br><span class="line">		    padding: 0 10px;</span><br><span class="line">		&#125;</span><br><span class="line">		.amount &#123;</span><br><span class="line">		    text-align: center;</span><br><span class="line">		    padding-right: 10px;</span><br><span class="line">		    font-size: 12px;</span><br><span class="line">		    color: #FFD41D;</span><br><span class="line">		    border-right: 1px solid #FFA068;</span><br><span class="line">		&#125;</span><br><span class="line">		.amount span &#123;</span><br><span class="line">			font-size: 30px;</span><br><span class="line">		    line-height: 30px;</span><br><span class="line">		&#125;</span><br><span class="line">		.fundInfo &#123;</span><br><span class="line">			padding: 8px 10px;</span><br><span class="line">		&#125;</span><br><span class="line">		.fundInfo p &#123;</span><br><span class="line">			color: #FFF;</span><br><span class="line">		    font-size: 12px;</span><br><span class="line">		&#125;</span><br></pre></td></tr></table></figure>
+<p>效果：<img src="https://upload-images.jianshu.io/upload_images/8556622-9bb0c6ab48b6113b.gif?imageMogr2/auto-orient/strip" alt="demo1.gif"></p>
+<p>总结：redPacket 在没有添加float: left; 样式的时候。小屏手机（iPhone5） 出现样式错乱现象，这是由于 redPacket宽度和父级宽度一致（100%），并且默认item的最小宽度为最终宽度，子集撑不开，样式乱码，添加float: left; 后 ，使其脱离文档流，宽度变为所有子集（item）之和，这样里面文字无论变为多少，文字都不会被隐藏 。<br>对应源代码和实例效果 ，放到了<a href="https://codepen.io/wuf/pen/yqQRgb" target="_blank" rel="noopener">codepen </a>上，如果想实践可以去查阅。</p>
+<p>以上为此文章所有内容</p>
+
       
     </div>
     
@@ -363,144 +364,46 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-          <div>
-        
-      </div>
-
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://smalla1990.github.io/2018/02/07/js生成随机整数/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="dqnmwf">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="dqnmwf's Notes">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/07/js生成随机整数/" itemprop="url">js生成随机整数 </a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-07T19:30:51+08:00">
-                2018-02-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/css/" <i class="fa fa-tag"></i> css</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>基础</strong><br>1、Math.random()，其结果为  [0,1) 区间的随机小数。<br>2、Math.floor(num)，向下取num的整数部分<br> &nbsp; &nbsp; &nbsp; eg: Math.floor(2.99)    //2<br> &nbsp; &nbsp; &nbsp; eg: Math.floor(0.01)    //0<br>3、Math.round(num)  其结果为num四舍五入的整数<br>4、Math.ceil(n) 向上取整<br> &nbsp; &nbsp; &nbsp; eg: Math.ceil(2.99)    //3<br> &nbsp; &nbsp; &nbsp; eg: Math.ceil(0.01)    //1</p>
-<p><strong>生成随机数</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var random = function(min, max)&#123;</span><br><span class="line">      // 若max不存在 min 赋值给max,并重新赋值min</span><br><span class="line">     if(max == null)&#123;</span><br><span class="line">          max = min;  </span><br><span class="line">          min = 0;</span><br><span class="line">     &#125;</span><br><span class="line">     return min+ Math.floor(Math.random()*(max-min+1))</span><br><span class="line">&#125;</span><br><span class="line">random(5)   // 生成[0, 4) 区间的整数</span><br></pre></td></tr></table></figure></p>
-<p>如上述所说Math.random() 为[0, 1)区间的小数，<br>乘以(max-min) 为生成从 [min,max)  的随机数，会发现随机数的最大值达不到max,故要加个1，使其生成[min,max] 闭区间的整数。</p>
-<p><strong>数组随机乱序</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">var shuffle = function(array)&#123;</span><br><span class="line">    var rand ;</span><br><span class="line">    var index = 0;</span><br><span class="line">    var shuffled = []; // 准备一个空数组用于返回</span><br><span class="line">    // 下面就是一个打乱数组顺序的过程</span><br><span class="line">    for(var i =0; i&lt;array.length;  i++)&#123;</span><br><span class="line">        ////生成一个随机的索引</span><br><span class="line">        var random = random(index++)</span><br><span class="line">        // 避免出现空值，故 每次都需要给shuffled[index-1] 赋值</span><br><span class="line">        shuffled[index-1] = shuffled[random];</span><br><span class="line">        shuffled[random] = array[i];</span><br><span class="line">    &#125;</span><br><span class="line">    return shuffled;   </span><br><span class="line">&#125;</span><br><span class="line">shuffle([1,3,6]) // 数组随机乱序</span><br></pre></td></tr></table></figure></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/02/07/js生成随机整数/" rel="next" title="js生成随机整数 ">
+                <i class="fa fa-chevron-left"></i> js生成随机整数 
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
           <div>
+        
+          <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束 <i class="fa fa-paw"></i> 感谢您的阅读-------------</div>
+    
+</div>
+
         
       </div>
 
@@ -511,10 +414,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -522,6 +426,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -807,6 +715,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
