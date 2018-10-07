@@ -339,8 +339,8 @@
 
       
         
-          <h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><blockquote>
-<p>前不久碰到一个需求，在宽度不固定下实现横线滚动，这里我用css来写，记录下来，供以后借鉴。 <del>有时会忘记</del><br>
+          <p><strong>简介</strong><br>前不久碰到一个需求，在宽度不固定下实现横线滚动，这里我用css来写，记录下来，供以后借鉴。 <del>有时会忘记…</del></p>
+<p><strong>原理</strong><br>子元素的宽度大于父元素是，会出现滚动 overflow-x: scroll; 为水平滚动，overflow-y: scroll; 为垂直滚动，按需求这里采用水平横向滚动<br>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/06/07/实现横向滚动-并宽度不固定/#more" rel="contents">
@@ -468,13 +468,14 @@
 
       
         
-          
-            <p><strong>基础</strong><br>1、Math.random()，其结果为  [0,1) 区间的随机小数。<br>2、Math.floor(num)，向下取num的整数部分<br> &nbsp; &nbsp; &nbsp; eg: Math.floor(2.99)    //2<br> &nbsp; &nbsp; &nbsp; eg: Math.floor(0.01)    //0<br>3、Math.round(num)  其结果为num四舍五入的整数<br>4、Math.ceil(n) 向上取整<br> &nbsp; &nbsp; &nbsp; eg: Math.ceil(2.99)    //3<br> &nbsp; &nbsp; &nbsp; eg: Math.ceil(0.01)    //1</p>
-<p><strong>生成随机数</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var random = function(min, max)&#123;</span><br><span class="line">      // 若max不存在 min 赋值给max,并重新赋值min</span><br><span class="line">     if(max == null)&#123;</span><br><span class="line">          max = min;  </span><br><span class="line">          min = 0;</span><br><span class="line">     &#125;</span><br><span class="line">     return min+ Math.floor(Math.random()*(max-min+1))</span><br><span class="line">&#125;</span><br><span class="line">random(5)   // 生成[0, 4) 区间的整数</span><br></pre></td></tr></table></figure></p>
-<p>如上述所说Math.random() 为[0, 1)区间的小数，<br>乘以(max-min) 为生成从 [min,max)  的随机数，会发现随机数的最大值达不到max,故要加个1，使其生成[min,max] 闭区间的整数。</p>
-<p><strong>数组随机乱序</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">var shuffle = function(array)&#123;</span><br><span class="line">    var rand ;</span><br><span class="line">    var index = 0;</span><br><span class="line">    var shuffled = []; // 准备一个空数组用于返回</span><br><span class="line">    // 下面就是一个打乱数组顺序的过程</span><br><span class="line">    for(var i =0; i&lt;array.length;  i++)&#123;</span><br><span class="line">        ////生成一个随机的索引</span><br><span class="line">        var random = random(index++)</span><br><span class="line">        // 避免出现空值，故 每次都需要给shuffled[index-1] 赋值</span><br><span class="line">        shuffled[index-1] = shuffled[random];</span><br><span class="line">        shuffled[random] = array[i];</span><br><span class="line">    &#125;</span><br><span class="line">    return shuffled;   </span><br><span class="line">&#125;</span><br><span class="line">shuffle([1,3,6]) // 数组随机乱序</span><br></pre></td></tr></table></figure></p>
-
-          
+          <p><strong>基础</strong><br>1、Math.random()，其结果为  [0,1) 区间的随机小数。<br>2、Math.floor(num)，向下取num的整数部分<br> &nbsp; &nbsp; &nbsp; eg: Math.floor(2.99)    //2<br> &nbsp; &nbsp; &nbsp; eg: Math.floor(0.01)    //0<br>3、Math.round(num)  其结果为num四舍五入的整数<br>4、Math.ceil(n) 向上取整<br> &nbsp; &nbsp; &nbsp; eg: Math.ceil(2.99)    //3<br> &nbsp; &nbsp; &nbsp; eg: Math.ceil(0.01)    //1<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/02/07/js生成随机整数/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -574,10 +575,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                
+                <a href="/tags/index.html">
                   <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
